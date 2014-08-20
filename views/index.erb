@@ -1,0 +1,13 @@
+<h1>Helen's Jams</h1>
+
+<ol>
+  <% songs.each do |song| %>
+    <li>
+      <a href="/artists/<%= song[:artist] %>">
+        <%= song[:artist] %>
+      </a>
+
+      - <%= song[:name] %>
+    </li>
+  <% end %>
+</ol>

@@ -1,0 +1,11 @@
+<a href="/">Back</a>
+
+<h1><%= artist_name %></h1>
+
+<ol>
+  <% songs.each do |song| %>
+    <li>
+      <%= song[:name] %>
+    </li>
+  <% end %>
+</ol>
